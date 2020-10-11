@@ -1,8 +1,14 @@
+
 * {
   margin: 0;
   padding: 0;
   user-select: none;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
 }
 
 /*HEADER*/
@@ -101,6 +107,10 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  background-color: #ffffff;
+}
+.carousel .carousel-indicators li.active {
+  background-color: #f8931f;
 }
 
 /*main*/
@@ -142,6 +152,9 @@
 /*SECOND CAROUSEL*/
 .challenge-carousel {
   min-height: 500px;
+}
+.challenge-carousel .carousel-indicators li.active {
+  background-color: #036b3a;
 }
 
 .bus-img {
@@ -199,7 +212,9 @@
 
 /* WHY US*/
 .why-us {
-  background-color: #f8931f;
+  background-image: url(../img/orange.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   min-height: 580px;
   height: 580px;
 }
@@ -226,6 +241,20 @@
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+}
+.why-us-img::after {
+  content: '';
+  border-color: transparent transparent transparent #f8931f;
+  border-style:solid;
+  border-width:3px;
+  position: absolute;
+  height: 50px;
+  transform: rotate(90deg);
+  top: 42px;
+}
+.insuranse-img {
+  background-color: transparent;
+  background-color: #f8931f !important;
 }
 .why-us-img img {
   width: 80%;
@@ -328,6 +357,20 @@
   font-size: 10px;
 }
 /*QUERIES*/
+@media screen and (max-width:1024px){
+  .carousel-text {
+    position: initial;
+  }
+  .challenge-carousel .carousel-control-prev {
+    left: 800px;
+    top: 350px;
+  }
+  .challenge-carousel .carousel-control-next {
+    top: 350px;
+    right: 200px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   /*NAVBAR*/
   .navbar ul {
@@ -404,8 +447,13 @@
   }
   /* WHY US*/
   .why-us {
+    background-image: url(../img/tablet_orange.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: auto;
+
   }
+
   .text-why {
     width: 100%;
   }
@@ -462,9 +510,6 @@
   .carousel-text p {
     font-size: 14px;
   }
-  .challenge-carousel .carousel-control-prev, .challenge-carousel .carousel-control-next {
-    top: 270px;
-  }
   .bus-img {
     width: 200px;
     height: 200px;
@@ -493,6 +538,11 @@
     font-size: 14px;
   }
   /*.WHY*/
+  .why-us {
+    background-image: url(../img/phone_orange.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .col-why {
     text-align: center;
     display: flex;
@@ -513,12 +563,21 @@
 }
 
 /*--------*/
+.insuranse {
+  background-color: #036b3a;
+}
 .up {
   transition: all 0.2s ease-in-out;
   transform: rotate(180deg);
 }
+.h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900 !important;
+}
 .h2 {
   color: #036b3a;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900 !important;
 }
 .button {
   width: 150px;
