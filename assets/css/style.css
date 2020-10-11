@@ -268,13 +268,10 @@
   font-size: 30px;
 }
 .social-footer i {
-  color: #ffff !important;
+  color: #ffff;
   transition: all 0.2s ease-in-out;
 }
-.social-footer a {
-  color: #ffff !important;
-  transition: all 0.2s ease-in-out;
-}
+
 .social-footer i:hover {
   color: #f8931f;
 }
