@@ -20,7 +20,7 @@ body {
       rgba(13, 72, 44, 0.3),
       rgba(13, 72, 44, 0.5)
     ),
-    url(../img/dpe_transport_homepage2.jpg);
+    url(../img/dpe_transport_homepage22.jpg);
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -334,7 +334,7 @@ body {
 }
 .footer .navegation {
   position: relative;
-  /*left: 60px;*/
+  left: 60px;
 }
 .footer .contact i {
   color: #ffffff;
@@ -369,6 +369,14 @@ body {
     top: 350px;
     right: 200px;
   }
+  .img-roi {
+    width: 400px;
+  }
+  
+.footer .navegation {
+  position: relative;
+  left: 0px;
+}
 }
 
 @media screen and (max-width: 991px) {
