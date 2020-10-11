@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +9,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
 }
+
 
 /*HEADER*/
 .header {
@@ -62,23 +62,24 @@ body {
 .nav-item a:hover {
   color: #ffffff !important;
 }
-.nav-link::before {
+.link::before {
   content: "";
   position: absolute;
   left: 0;
   height: 25px;
   border: 1px solid #ffffff;
 } 
+
 .social-header {
   color: #ffffff;
   margin-right: 30px;
 }
 .social-header a {
   color: #ffffff;
-  -moz-transition: all 0.25s ease-out;
-  -ms-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
 }
 .social-header a:hover {
   color: #f8931f;
@@ -114,10 +115,9 @@ body {
 }
 
 /*main*/
-.main {
-  width: 95%;
+/*.main {
   margin: auto;
-}
+}* /
 /*LIST SERVICES*/
 .list-services {
   background-color: #ffffff;
@@ -173,6 +173,7 @@ body {
 .carousel-text .button {
   margin-top: 40px;
 }
+
 
 .challenge-carousel .carousel-control-next {
   width: 100px;
@@ -267,6 +268,11 @@ body {
 }
 .information form {
   width: 50%;
+}
+.information .form input {
+  border: none;
+  border-radius: 0;
+  height: 40px;
 }
 
 /* QUESTIONS */
@@ -379,6 +385,8 @@ body {
 }
 }
 
+
+
 @media screen and (max-width: 991px) {
   /*NAVBAR*/
   .navbar ul {
@@ -413,9 +421,17 @@ body {
       height: 320px;
       width: 400px;
     }
+    
   }
    
 @media screen and (max-width: 768px) {
+  .social-header {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    color: #ffffff;
+    margin-right: 30px;
+  }
   .bus-img {
     left: 0;
     width: 300px;
@@ -481,9 +497,49 @@ body {
     align-items: center;
     text-align: center;
   }
+  .col-item{
+    width: 50% !important;
+  }
+  .question-container {
+    margin-left: 30px;
+  }
+  p {
+    font-size: 14px !important;
+  }
+  .hamburger .hamburger__icon, 
+.hamburger .hamburger__icon:before, 
+.hamburger .hamburger__icon:after {
+    background-color: white;
+    display: block !important;
+
+}
+  
   
 }
 
+@media screen and (max-width:767px){
+  .logo {
+    width: 200px;
+  }
+  .container-us  {
+    width: 0;
+  }
+  .col-why:first-child {
+    width: 100% !important;
+  }
+  .col-why {
+    width: 50% !important;
+  }
+  .experts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+
+}
 
 @media screen and (max-width: 479px) {
   .header {
@@ -516,7 +572,7 @@ body {
     font-size: 20px ;
   }
   .carousel-text p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .bus-img {
     width: 200px;
@@ -524,8 +580,8 @@ body {
   }
   /*INFORMATION*/
  .information .form {
-    width: 100%;
-  }
+    width: 100%;  
+ }
   /*QUESTIONS*/
   .question-container {
    margin-left: 0;
@@ -543,7 +599,7 @@ body {
   }
   .roi p {
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
   }
   /*.WHY*/
   .why-us {
@@ -551,15 +607,20 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .why-us-img::after {
+    top: 60px;
+    
+  }
   .col-why {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100% !important;
   }
 
   .why-us-item:last-child {
-    margin: 0px 0 20px 0;
+    margin: 20px 0 20px 0;
   }
   .footer {
     display: flex;
@@ -571,8 +632,11 @@ body {
 }
 
 /*--------*/
-.insuranse {
-  background-color: #036b3a;
+.hamburger .hamburger__icon, 
+.hamburger .hamburger__icon:before, 
+.hamburger .hamburger__icon:after {
+    background-color: white;
+    display: none;
 }
 .up {
   transition: all 0.2s ease-in-out;
@@ -593,9 +657,9 @@ body {
   background-color: #036b3a !important;
   border: none !important;
 }
-.active-border {
+/*.active-border {
   border-top: 4px solid salmon;
-}
+}*/
 .active {
   color: #f8931f;
   transition: all 0.2s ease;

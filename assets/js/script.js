@@ -1,12 +1,14 @@
 $(document).ready(function(){
- 
+  $.fatNav();
+
+
 
 $(function(){
     $('.nav-item a').on('click', function(){
        $('.nav-item a.active').removeClass('active');
-       $('.nav-item a').removeClass('active-border');
+     //  $('.nav-item a').removeClass('active-border');
        $(this).addClass('active');
-       $(this).addClass('active-border');
+       //$(this).addClass('active-border');
     });
 });
 
