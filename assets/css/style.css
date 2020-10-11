@@ -430,6 +430,9 @@
 
 
 @media screen and (max-width: 479px) {
+  .header {
+    height: 610px;
+  }
   .logo {
     width: 140px;
   }
