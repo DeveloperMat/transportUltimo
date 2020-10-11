@@ -385,7 +385,16 @@ body {
 }
 }
 
+@media screen and (min-width:1600px){
+  .challenge-carousel .carousel-control-prev {
+    left: 1100px;
+    top: 210px;
+  }
+  .challenge-carousel .carousel-control-next {
+    top: 210px;
 
+  }
+}
 
 @media screen and (max-width: 991px) {
   /*NAVBAR*/
@@ -506,7 +515,7 @@ body {
   p {
     font-size: 14px !important;
   }
-  .hamburger .hamburger__icon, 
+.hamburger .hamburger__icon, 
 .hamburger .hamburger__icon:before, 
 .hamburger .hamburger__icon:after {
     background-color: white;
@@ -515,17 +524,6 @@ body {
 }
   
   
-}
-
-@media screen and (min-width:1600px){
-  .challenge-carousel .carousel-control-prev {
-    left: 1100px;
-    top: 210px;
-  }
-  .challenge-carousel .carousel-control-next {
-    top: 210px;
-
-  }
 }
 
 @media screen and (max-width:767px){
