@@ -434,7 +434,7 @@
   }
   .header-phone {
     font-size: 12px;
-    margin-top: 3px;
+    margin-top: 5px;
   }
   .navbar ul {
     justify-content: center;
@@ -475,8 +475,8 @@
   }
   /*ROI*/
   .img-roi {
-    height: 280px;
-    width: 220px;
+    height: 250px;
+    width: 260px;
   }
   .roi-text {
     width: 100%;
