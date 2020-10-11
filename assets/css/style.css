@@ -430,10 +430,10 @@
 
 @media screen and (max-width: 479px) {
   .logo {
-    width: 150px;
+    width: 140px;
   }
   .header-phone {
-    font-size: 15px;
+    font-size: 12px;
   }
   .navbar ul {
     justify-content: center;
@@ -475,7 +475,7 @@
   /*ROI*/
   .img-roi {
     height: 250px;
-    width: 250px;
+    width: 220px;
   }
   .roi-text {
     width: 100%;
